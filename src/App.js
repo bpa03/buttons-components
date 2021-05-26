@@ -1,4 +1,4 @@
-import { Home } from './components/views/Home.jsx';
+import { Home } from './components/views/Home/Home.jsx';
 
 export const App = () => {
   return (
