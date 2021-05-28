@@ -22,8 +22,12 @@ export const defaultButton = css`
   color: ${(props) => Colors[props.color].font};
   border: 1px solid ${props => Colors[props.color].color};
   transition: background 0.3s, border 0.3s;
+  ${props => 
+    props.disableShadow 
+    ? '' 
+    : `box-shadow: 0px 2px 3px 0px ${Colors[props.color].color}`};
 
-  &:hover {
+  &:hover, &:active {
     background: ${props => Colors[props.color].darken};
     border: 1px solid ${props => Colors[props.color].darken};
   }
@@ -35,7 +39,7 @@ export const outline = css`
   border: 1px solid ${props => Colors[props.color].color};
   transition: background 0.3s, border 0.3s;
 
-  &:hover {
+  &:hover, &:active {
     background: ${props => Colors[props.color].ligth}
   }
 `
@@ -45,7 +49,7 @@ export const text = css`
   color: ${props => Colors[props.color].color};
   transition: background 0.3s, border 0.3s;
 
-  &:hover {
+  &:hover, &:active {
     background: ${props => Colors[props.color].ligth}
   }
 `
