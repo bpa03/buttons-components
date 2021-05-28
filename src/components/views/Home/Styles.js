@@ -38,5 +38,4 @@ export const BoxTitle = styled.p`
   line-height: 20px;
   margin-bottom: 12px;
   color: rgba(51, 51, 51, 1);
-  font-family: 'Ubuntu Mono', var(--font-poppins);
 `;
