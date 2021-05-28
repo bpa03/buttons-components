@@ -9,7 +9,7 @@ export const ButtonBase = styled.button`
   ${(props) => (props.disabled ? Styles.disabled : Styles[props.variant])}
   ${(props) => Styles[props.size]}
   font-weigth: 500;
-  font-size: 0.843em;
+  font-size: 1em;
   border-radius: 6px;
   line-height: 1.4rem;
   cursor: pointer;

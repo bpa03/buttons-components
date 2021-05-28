@@ -7,14 +7,21 @@
   --font-poppins: "Poppins", sans-serif;
   --font-ubuntu-mono: "Ubuntu Mono", monospace;
   --font-size: 18px;
+  --font-size-responsibe: 13px;
   --body-bg-color: rgba(242, 242, 242, 1);
 }
 
 html {
   box-sizing: border-box;
-  font-size: var(--font-size);
+  font-size: var(--font-size-responsibe);
   font-family: var(--font-noto-jp);
   font-weight: 500;
+}
+
+@media only screen and (min-width: 880px) {
+  html {
+    font-size: var(--font-size);
+  }
 }
 
 body {

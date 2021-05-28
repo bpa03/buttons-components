@@ -47,11 +47,11 @@ export const Home = () => {
           </Box>
         </Row>
         <Row>
-          <Box style={{ flexBasis: "30%" }}>
+          <Box style={{ flexBasis: "35%" }}>
             <BoxTitle> {"<Button startIcon=”local_grocery_store”/>"} </BoxTitle>
             <Button color="primary" startIcon="local_grocery_store" > Default </Button>
           </Box>
-          <Box>
+          <Box style={{ flexBasis: "35%" }}>
             <BoxTitle> {"<Button endIcon=”local_grocery_store”/>"} </BoxTitle>
             <Button color="primary" endIcon="local_grocery_store" > Default </Button>
           </Box>
@@ -72,19 +72,19 @@ export const Home = () => {
         </Row>
         <Row>
           <Box>
-            <BoxTitle> {"<Button size=”default” />"} </BoxTitle>
+            <BoxTitle> {"<Button />"} </BoxTitle>
             <Button> Default </Button>
           </Box>
           <Box>
-            <BoxTitle> {"<Button size=”primary” />"} </BoxTitle>
+            <BoxTitle> {"<Button color=”primary” />"} </BoxTitle>
             <Button color="primary"> Default </Button>
           </Box>
           <Box>
-            <BoxTitle> {"<Button size=”secondary” />"} </BoxTitle>
+            <BoxTitle> {"<Button color=”secondary” />"} </BoxTitle>
             <Button color="secondary"> Default </Button>
           </Box>
           <Box>
-            <BoxTitle> {"<Button size=”danger” />"} </BoxTitle>
+            <BoxTitle> {"<Button color=”danger” />"} </BoxTitle>
             <Button color="danger"> Default </Button>
           </Box>
         </Row>
