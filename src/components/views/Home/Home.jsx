@@ -10,32 +10,32 @@ export const Home = () => {
       <Wrapper>
         <Row>
           <Box>
-            <BoxTitle> {"<Button />"} </BoxTitle>
+            <BoxTitle> {"<Button/>"} </BoxTitle>
             <Button>Default</Button>
           </Box>
           <Box>
             <BoxTitle> {"&:hover, &:active"} </BoxTitle>
-            <Button>Default</Button>
+            <Button hover>Default</Button>
           </Box>
         </Row>
         <Row>
           <Box>
-            <BoxTitle> {"<Button variant=”outline” />"} </BoxTitle>
+            <BoxTitle> {"<Button variant=”outline”/>"} </BoxTitle>
             <Button variant="outline" color="primary"> Default </Button>
           </Box>
           <Box>
             <BoxTitle> {"&:hover, &:active"} </BoxTitle>
-            <Button variant="outline" color="primary"> Default </Button>
+            <Button variant="outline" color="primary" hover> Default </Button>
           </Box>
         </Row>
         <Row>
           <Box>
-            <BoxTitle> {"<Button variant=”text” />"} </BoxTitle>
+            <BoxTitle> {"<Button variant=”text”/>"} </BoxTitle>
             <Button variant="text" color="primary"> Default </Button>
           </Box>
           <Box>
             <BoxTitle> {"&:hover, &:active"} </BoxTitle>
-            <Button variant="text" color="primary"> Default </Button>
+            <Button variant="text" color="primary" hover> Default </Button>
           </Box>
           <Box>
             <BoxTitle> {"<Button disableShadow/>"} </BoxTitle>
@@ -47,60 +47,60 @@ export const Home = () => {
           </Box>
         </Row>
         <Row>
-          <Box style={{ flexBasis: "35%" }}>
+          <Box style={{ flexBasis: "50%" }}>
             <BoxTitle> {"<Button startIcon=”local_grocery_store”/>"} </BoxTitle>
             <Button color="primary" startIcon="local_grocery_store" > Default </Button>
           </Box>
-          <Box style={{ flexBasis: "35%" }}>
+          <Box style={{ flexBasis: "50%" }}>
             <BoxTitle> {"<Button endIcon=”local_grocery_store”/>"} </BoxTitle>
             <Button color="primary" endIcon="local_grocery_store" > Default </Button>
           </Box>
         </Row>
         <Row>
           <Box>  
-            <BoxTitle> {"<Button size=”sm” />"} </BoxTitle>
+            <BoxTitle> {"<Button size=”sm”/>"} </BoxTitle>
             <Button color="primary" size="sm"> Default </Button>
           </Box>
           <Box>  
-            <BoxTitle> {"<Button size=”md” />"} </BoxTitle>
+            <BoxTitle> {"<Button size=”md”/>"} </BoxTitle>
             <Button color="primary" size="md"> Default </Button>
           </Box>
           <Box>  
-            <BoxTitle> {"<Button size=”lg” />"} </BoxTitle>
+            <BoxTitle> {"<Button size=”lg”/>"} </BoxTitle>
             <Button color="primary" size="lg"> Default </Button>
           </Box>
         </Row>
         <Row>
           <Box>
-            <BoxTitle> {"<Button />"} </BoxTitle>
+            <BoxTitle> {"<Button/>"} </BoxTitle>
             <Button> Default </Button>
           </Box>
           <Box>
-            <BoxTitle> {"<Button color=”primary” />"} </BoxTitle>
+            <BoxTitle> {"<Button color=”primary”/>"} </BoxTitle>
             <Button color="primary"> Default </Button>
           </Box>
           <Box>
-            <BoxTitle> {"<Button color=”secondary” />"} </BoxTitle>
+            <BoxTitle> {"<Button color=”secondary”/>"} </BoxTitle>
             <Button color="secondary"> Default </Button>
           </Box>
           <Box>
-            <BoxTitle> {"<Button color=”danger” />"} </BoxTitle>
+            <BoxTitle> {"<Button color=”danger”/>"} </BoxTitle>
             <Button color="danger"> Default </Button>
           </Box>
         </Row>
         <Row>
           <Box>
             <BoxTitle> {"&:hover, &:active"} </BoxTitle>
-            <Button> Default </Button>
+            <Button hover> Default </Button>
           </Box>
           <Box>
-            <Button color="primary"> Default </Button>
+            <Button color="primary" hover> Default </Button>
           </Box>
           <Box>
-            <Button color="secondary"> Default </Button>
+            <Button color="secondary" hover> Default </Button>
           </Box>
           <Box>
-            <Button color="danger"> Default </Button>
+            <Button color="danger" hover> Default </Button>
           </Box>
         </Row>
       </Wrapper>

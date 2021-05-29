@@ -18,9 +18,13 @@ export const lg = css`
 // Buttons Variants
 
 export const defaultButton = css`
-  background: ${(props) => Colors[props.color].color};
+  background: ${(props) => props.hover 
+    ? Colors[props.color].darken
+    : Colors[props.color].color};
+  border: 1px solid ${props => props.hover 
+    ? Colors[props.color].darken 
+    : Colors[props.color].color};
   color: ${(props) => Colors[props.color].font};
-  border: 1px solid ${props => Colors[props.color].color};
   transition: background 0.3s, border 0.3s;
   ${props => 
     props.disableShadow 
@@ -34,7 +38,10 @@ export const defaultButton = css`
 `;
 
 export const outline = css`
-  background: #fff;
+  background: ${props => props.hover 
+    ? Colors[props.color].ligth
+    : "#fff"
+  };
   color: ${props => Colors[props.color].color};
   border: 1px solid ${props => Colors[props.color].color};
   transition: background 0.3s, border 0.3s;
@@ -45,8 +52,11 @@ export const outline = css`
 `
 
 export const text = css`
-  background: transparent;
-  color: ${props => Colors[props.color].color};
+  background: ${props => props.hover
+    ? Colors[props.color].ligth
+    : 'transparent'
+  };
+  color: Colors[props.color].color;
   transition: background 0.3s, border 0.3s;
 
   &:hover, &:active {

@@ -13,6 +13,8 @@ export const ButtonBase = styled.button`
   border-radius: 6px;
   line-height: 1.4rem;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 `;
 
 export const Button = ({
@@ -24,6 +26,7 @@ export const Button = ({
   startIcon,
   endIcon,
   disableShadow,
+  hover
 }) => {
   return (
     <ButtonBase
@@ -32,6 +35,7 @@ export const Button = ({
       variant={variant}
       disabled={disabled}
       disableShadow={disableShadow}
+      hover={hover}
     >
       {startIcon && (
         <Icon icon={startIcon} style={{ marginRight: "10px" }} />
@@ -52,6 +56,7 @@ Button.propTypes = {
   startIcon: PropTypes.string,
   endIcon: PropTypes.string,
   disableShadow: PropTypes.bool,
+  hover: PropTypes.bool
 };
 
 Button.defaultProps = {
@@ -62,4 +67,5 @@ Button.defaultProps = {
   startIcon: "",
   endIcon: "",
   disableShadow: false,
+  hover: false
 };

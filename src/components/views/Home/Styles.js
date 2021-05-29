@@ -36,7 +36,7 @@ export const Row = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   align-items: flex-end;
-  margin: 38px 0;
+  margin: 30px 0;
 
   @media only screen and (min-width: 850px) {
     & {
@@ -46,6 +46,7 @@ export const Row = styled.div`
 
   @media only screen and (max-width: 730px) {
     & {
+      margin: 20px 0;
       flex-wrap: wrap;
     }
   }
@@ -75,7 +76,7 @@ export const Box = styled.div`
 
   @media screen and (max-width: 930px) {
     & {
-      flex-basis: 50%;
+      flex-basis: 45%;
     }
     & button {
       margin: 0 auto;
@@ -87,7 +88,7 @@ export const Box = styled.div`
 `;
 
 export const BoxTitle = styled.p`
-  font-size: .86em;
+  font-size: .92em;
   font-weight: 400;
   line-height: 20px;
   margin-bottom: 12px;
